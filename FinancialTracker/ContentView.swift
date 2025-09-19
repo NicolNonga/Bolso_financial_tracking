@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init (){
+        UITabBar.appearance().unselectedItemTintColor = UIColor.gray
+    }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        MainTabView()
     }
 }
 
